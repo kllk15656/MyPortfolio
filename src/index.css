@@ -1,10 +1,24 @@
 @import "tailwindcss";
 
-/* background colour */
-
+/* Main backgroud */
 .bg{
     background-color: #DCC7FF;
 }
+/* Nav page*/
+
+.bg-nav{
+    background-color: #2E2A3B;
+
+}
+.nav-active {
+  color: #FFFFFF; /* purple */
+}
+
+.nav-inactive {
+  color: #DCC7FF; /* grey */
+}
+
+
 
 /* Home page*/
 .name-intro{

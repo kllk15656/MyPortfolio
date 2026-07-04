@@ -24,7 +24,7 @@ export default function Home() {
 
         {/* Subtitles*/ }
         <p className="text-large mt-2 name-stack">Full Stack Web Developer</p>
-        <p className="text-large mt-2 name-stack">Front-end Developer | Backk-end Developer | Project-based Experience</p>
+        <p className="text-large mt-2 name-stack">Front-end Developer | Back-end Developer | Project-based Experience</p>
 
         {/* buttons row*/ }
         <div className="flex gap-4 mt-6 ">
