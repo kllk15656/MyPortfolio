@@ -1,26 +1,24 @@
 @import "tailwindcss";
 
-/* Main backgroud */
+/* MAIN BACKGROUND CSS */
 .bg{
     background-color: #DCC7FF;
 }
-/* Nav page*/
+/* NAV PAGE CSS*/
 
 .bg-nav{
     background-color: #2E2A3B;
 
 }
 .nav-active {
-  color: #FFFFFF; /* purple */
+  color: #FFFFFF; 
 }
 
 .nav-inactive {
-  color: #DCC7FF; /* grey */
+  color: #DCC7FF; 
 }
 
-
-
-/* Home page*/
+/* HOMEP PAGE CSS*/
 .name-intro{
     color: #FFFFFF;
     font-size: 30px;
@@ -47,7 +45,6 @@
 
 .transition{
  background: linear-gradient(90deg, #C0C0C0 25%, #00E5FF 76%);
-lor:#C0C0C0;
 color: #FFFFFF;
 font-weight: bold;
 border-radius: 30px;
@@ -80,4 +77,69 @@ box-shadow: 0px 2px 10px rgba(8, 8, 8, 0.3);
     font-size: 14px;
     color: #2E2A3B;
 
+}
+
+/*  ABOUT PAGE CSS*/
+
+.about-wrapper{
+      background-color: #DCC7FF; 
+}
+/*  Title*/
+
+.about-title {
+     text-align: center;
+    color: #2E2A3B;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.slideshow-title{
+    text-align: center;
+    color: #2E2A3B;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+/* left and right wrapper*/
+.about-left{
+    background-color: #E9E5F5;
+    height: 500px;   /* make it taller */
+    box-shadow: 0px 2px 10px rgba(8, 8, 8, 0.3);
+
+
+}
+.about-right{
+    background-color: #E9E5F5;
+    height: 500px;   /* make it taller */
+    box-shadow: 0px 2px 10px rgba(8, 8, 8, 0.3);
+
+}
+.slideshow-image-wrapper{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 4%;
+}
+
+/* about page text */
+.about-text{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #2E2A3B;
+}
+.slideshow-text{
+    text-align: center;
+    font-size: 14px;
+    color: #2E2A3B;
+}
+/* button */
+.cv-button {
+    background: linear-gradient(90deg, #C0C0C0 25%, #00E5FF 76%);
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(8, 8, 8, 0.3);
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;   /* pushes button DOWN */
+    padding: 10px 20px;
 }

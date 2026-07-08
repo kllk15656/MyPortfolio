@@ -42,14 +42,37 @@ export default function Home() {
     </div>
 
         {/* Recent Updates*/ }
+        
+       {/* Recent Updates Section Wrapper */}
+<div className="updates-wrapper name-update mt-16 h-60 rounded-lg">
 
-        <div className="mt-16  h-60 name-update rounded-lg ">
-          <h2 className="text-2xl font-semibold recent ">Recent Updates</h2>
-          <div className="mt-4 p-4 rounded-lg w-30 h-35 name-topic">
-            <h3 className=" font-semibold recent-title"> Booking System</h3>
-            <p className="mt-1 recent-text"> Full stack booking system</p>
-          </div>
-        </div>
+  {/* Section Title */}
+  <h2 className="updates-title recent font-semibold">
+    Recent Updates
+  </h2>
+
+  {/* Content Row: arrows + update card */}
+  <div className="updates-content flex items-center justify-between mt-4">
+
+    {/* Left Arrow Button */}
+    <button className="updates-arrow w-6 h-6">
+      <img src="/icons/Left.png" alt="Previous" className="arrow-icon" />
+    </button>
+
+    {/* Update Card */}
+    <div className="update-card p-4 rounded-lg name-topic">
+      <h3 className="update-title font-semibold">Booking System</h3>
+      <p className="update-text mt-1">Full stack booking system</p>
+      <button className="update-button mt-3">More Information</button>
+    </div>
+
+    {/* Right Arrow Button */}
+    <button className="updates-arrow w-6 h-6" >
+      <img src="/icons/Right.png" alt="Next" className="arrow-icon"  />
+    </button>
+
+  </div>
+</div>
 
       {/* Footer*/ }
 
