@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import ContactForm from "./pages/Contact";
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About/>} />
+            <Route path="/Contact" element={<ContactForm/>} />
+
 
           </Routes>
         </main>

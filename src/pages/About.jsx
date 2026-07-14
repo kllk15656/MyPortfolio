@@ -66,9 +66,11 @@ export default function About() {
     </div>  {/* ← FIX: MAIN WRAPPER CLOSED HERE */}
 
     {/* FOOTER OUTSIDE FLEX */}
-    <footer className="mt-auto py-6 text-center text-sm">
-      Copyright © KKdeveloper 2026
-    </footer>
+    <div className="footer-wrapper">
+      <footer className="site-footer">
+        Copyright © KKdeveloper 2026
+      </footer>
+    </div>
   </>
 );
 }

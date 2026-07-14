@@ -75,10 +75,13 @@ export default function Home() {
 </div>
 
       {/* Footer*/ }
-
-      <footer className="mt-auto py-6 text-center text-sm">
-         Copyright © KKdeveloper 2026
+    <div className="footer-wrapper">
+      <footer className="site-footer">
+        Copyright © KKdeveloper 2026
       </footer>
-    </div>    
+    </div>
+      
+    </div>
+        
   );
 }
