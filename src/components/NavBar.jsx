@@ -49,6 +49,22 @@ export default function TopNav() {
             )}
           </NavLink>
           </li>
+          
+          {/* Service */}
+           <li>
+          <NavLink
+          to="/Service" className={({ isActive }) =>
+          `nav-link flex flex-col items-center ${isActive ? "nav-active" : "nav-inactive"}`}>
+          {({ isActive }) => (
+            <>
+            <img
+            src={isActive ? "/icons/ServiceA.png" : "/icons/Services.png"}
+            className="w-6 h-6 mb-1"
+            alt="Service"/>Service
+            </>
+            )}
+          </NavLink>
+          </li>
 
           {/* PROJECTS */}
           <li>

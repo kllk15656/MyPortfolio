@@ -187,3 +187,33 @@ box-shadow: 0px 2px 10px rgba(10, 10, 10, 0.3);
     margin: 0 auto;
     box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
 }
+
+.service-card{
+     border-top: 2px solid #FFFFFF;
+}
+
+.services-page{
+   background-color: #E9E5F5; 
+   border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3); 
+}
+.service-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.title_sub{
+    font-size: 16px;
+    font-weight: bold;
+}
+.title_s{
+    font-size: 16px;
+    font-weight:500;
+
+}
+.title-text{
+    font-size: 13px;
+
+}
+.Service-sub{
+    font-size: 14px;
+}
