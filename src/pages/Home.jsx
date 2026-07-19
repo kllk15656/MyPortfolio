@@ -47,7 +47,7 @@ export default function Home() {
 <div className="updates-wrapper name-update mt-16 h-60 rounded-lg">
 
   {/* Section Title */}
-  <h2 className="updates-title recent font-semibold">
+  <h2 className="recent-title font-semibold">
     Recent Updates
   </h2>
 
@@ -59,12 +59,13 @@ export default function Home() {
       <img src="/icons/Left.png" alt="Previous" className="arrow-icon" />
     </button>
 
-    {/* Update Card */}
-    <div className="update-card p-4 rounded-lg name-topic">
-      <h3 className="update-title font-semibold">Booking System</h3>
-      <p className="update-text mt-1">Full stack booking system</p>
-      <button className="update-button mt-3">More Information</button>
-    </div>
+  {/* Update Card */}
+<div className="update-card w-full max-w-2xl p-6 rounded-lg name-topic">
+  <h3 className="recent-title font-semibold">Booking System</h3>
+  <p className="recent-text mt-1">Full stack booking system</p>
+  <button className="button mt-3">More Information</button>
+</div>
+
 
     {/* Right Arrow Button */}
     <button className="updates-arrow w-6 h-6" >
