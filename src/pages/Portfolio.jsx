@@ -4,10 +4,7 @@ export default function Projects() {
   return (
     <div className="min-h-screen px-6 py-10 items-stretch">
 
-      {/* HEADER */}
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold project-name">Portfolio Projects</h1>
-      </header>
+     
 
       {/* MAIN LAYOUT */}
       <div className="flex gap-10 items-start">
