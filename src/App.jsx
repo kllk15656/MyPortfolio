@@ -5,6 +5,7 @@ import About from "./pages/About";
 import ContactForm from "./pages/Contact";
 import Services from "./pages/Service";
 import Projects from "./pages/Portfolio";
+import ProjectInfo from "./pages/ProjectInfo";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/About" element={<About/>} />
             <Route path="/Service" element={<Services/>} />
             <Route path="/Portfolio" element={<Projects/>} />
+            <Route path="/ProjectInfo" element={<ProjectInfo/>} />
             <Route path="/Contact" element={<ContactForm/>} />
 
 

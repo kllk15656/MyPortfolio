@@ -24,8 +24,11 @@ export default function About() {
 
   return (
   <>
+  <header className="mb-8 header">
+        About
+      </header>
     <div className="about-wrapper px-6 py-6 flex gap-6 items-start"> {/* main wrapper */}
-
+      
       {/* LEFT SIDE */}
       <div className="about-left p-6 rounded-lg w-1/2">
         <h2 className="about-title">About Me</h2>

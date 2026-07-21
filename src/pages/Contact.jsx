@@ -27,16 +27,18 @@ export default function ContactForm(){
 
     return(
         // Main wrapper – centers everything on the page
-        <div className="px-6 py-6 flex flex-col items-center contact-form">
+        <div className="flex flex-col items-center contact-form">
         {/* Page title */}
-
+        <header className="mb-8 header">
+        Contact Form
+      </header>
         
 
         {/* Form box – keeps the form centered */}
         
         <div className="w-full max-w-md p-6 rounded-lg message-bg ">
 
-        <h1 className="mb-6 contact-name text-center"> Contact Me</h1>
+        <h1 className="mb-7 contact-name text-center"> Contact Me</h1>
 
         <p className="text-center mb-4 intro-message">
         Feel free to send me a message — I’ll get back to you soon!

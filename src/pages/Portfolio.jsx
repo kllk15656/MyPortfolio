@@ -1,9 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Projects() {
-  return (
-    <div className="min-h-screen px-6 py-10 items-stretch">
+  const navigate = useNavigate();
 
+  return (
+    <div className="min-h-screen ">
+      <header className="mb-8 header">
+        Portfolio Projects
+      </header>
      
 
       {/* MAIN LAYOUT */}
@@ -79,10 +83,12 @@ export default function Projects() {
             <p className="mb-4 descript">
               This is a booking system ... more info will be added later
             </p>
+            <button className="project-button mb-4" onClick={() => navigate("/ProjectInfo")}
+>
+  More Info
+</button>
 
-            <button className="project-button mb-4">More Info</button>
-
-            <div className="summary">
+            <div className="summary mt-3">
               <p><strong>Created on:</strong> 27/11/2025</p>
               <p><strong>Latest update:</strong> 20/03/2026</p>
               <p><strong>Project:</strong> Project Based</p>
