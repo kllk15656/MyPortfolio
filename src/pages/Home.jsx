@@ -11,6 +11,7 @@ export default function Home() {
     
     // Main wrapper - adds page, padding and spacing  
     <div className="px-6 py-6">
+    
 
     {/*top Row*/ }
 

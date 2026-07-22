@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+
+import MainLayout from "./components/MainLayout";
+import BlankLayout from "./components/BlankLayout";
+import AdminLayout from "./components/AdminLayout";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactForm from "./pages/Contact";
@@ -7,36 +11,31 @@ import Services from "./pages/Service";
 import Projects from "./pages/Portfolio";
 import ProjectInfo from "./pages/ProjectInfo";
 
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <Router>
+      <Routes>
 
-      {/* FULL PAGE BACKGROUND */}
-      <div className="bg min-h-screen">
+        {/* PUBLIC PAGES */}
+        <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+        <Route path="/About" element={<MainLayout><About /></MainLayout>} />
+        <Route path="/Service" element={<MainLayout><Services /></MainLayout>} />
+        <Route path="/Portfolio" element={<MainLayout><Projects /></MainLayout>} />
+        <Route path="/ProjectInfo" element={<MainLayout><ProjectInfo /></MainLayout>} />
+        <Route path="/Contact" element={<MainLayout><ContactForm /></MainLayout>} />
 
-        {/* Navigation stays on every page */}
-        <NavBar />
+        {/* ADMIN LOGIN (NO NAVBAR) */}
+        <Route path="/Login" element={<BlankLayout><Login /></BlankLayout>} />
 
-        {/* Page content changes depending on the route */}
-        <main className="pt-24 max-w-6xl mx-auto px-4">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About/>} />
-            <Route path="/Service" element={<Services/>} />
-            <Route path="/Portfolio" element={<Projects/>} />
-            <Route path="/ProjectInfo" element={<ProjectInfo/>} />
-            <Route path="/Contact" element={<ContactForm/>} />
+        {/* ADMIN DASHBOARD (SIDEBAR) */}
+        <Route path="/Dashboard" element={<AdminLayout><Dashboard /></AdminLayout>} />
 
-
-          </Routes>
-        </main>
-
-      </div>
-
+      </Routes>
     </Router>
   );
 }
 
 export default App;
-

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function TopNav() {
   return (
-    // Full-width navbar, fixed at top
+    
     <nav className="w-full bg-nav shadow-sm border-b border-gray-200 fixed top-0 left-0 z-50">
 
       {/* Center content inside max width */}

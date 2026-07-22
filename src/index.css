@@ -404,9 +404,45 @@ font-family: 'Inter', sans-serif;
   color: #2E2A3B;
 }
 
-
-
 .info-image {
   background: #eee;
   border-radius: 10px;
+}
+
+/* Admin CSS */
+
+/* Login */
+
+.login-wrap{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
+}
+.welcome{
+    color: #2E2A3B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+.label-field{
+   color: #2E2A3B;
+   font-size: 14px; 
+}
+.input-field{
+    background-color: #FFFFFF;
+    
+}
+.login-button{
+    background: #00E5FF;
+    color:#FFFFFF;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 25px;
+    display: block;
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
+}
+.message-text{
+    color: #2E2A3B; 
+    text-align: center;
+    font-size: 14px;
 }
