@@ -79,36 +79,113 @@ html, body {
     display: block;      /* required for auto-centering */
     font-family: 'Poppins', sans-serif;
 }
-.placeholder-profile{
-    background-color: aliceblue;
+.profile-glow {
+  position: relative;
+  width: 280px;
+  height: 250px;
+  border-radius: 50%;
+  
 }
+
+/* Glow ring with animated blue colours */
+.profile-glow::before {
+  content: "";
+  position: absolute;
+  inset: -12px; /* glow outside the image */
+  border-radius: 50%;
+
+  /* Blue + white gradient */
+  background: conic-gradient(
+    #ffffff,
+    #d4f6ff,
+    #81d7ec,
+    #5cbeff,
+    #1cddff,
+    #5cbeff,
+    #81d7ec,
+    #d4f6ff,
+    #ffffff
+  );
+
+  /* Animate ONLY the gradient colours */
+  animation: colorSpin 1s linear infinite;
+
+  /* Hollow ring mask */
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 12px),
+    black 0
+  );
+}
+
+/* Colours rotate, circle stays still */
+@keyframes colorSpin {
+  0% {
+    background: conic-gradient(
+      #ffffff,
+      #d4f6ff,
+      #81d7ec,
+      #5cbeff,
+      #1cddff,
+      #5cbeff,
+      #81d7ec,
+      #d4f6ff,
+      #ffffff
+    );
+  }
+  100% {
+    background: conic-gradient(
+      #d4f6ff,
+      #81d7ec,
+      #5cbeff,
+      #1cddff,
+      #5cbeff,
+      #81d7ec,
+      #d4f6ff,
+      #ffffff,
+      #d4f6ff
+    );
+  }
+}
+
 .name-update{
     background-color: #E9E5F5;
     font-family: 'Inter', sans-serif;
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
 }
 
 .recent{
     text-align: center;
     color: #2E2A3B;
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    
+    
+    
+}
+.update-card{
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
+
 }
 .name-topic{
     background-color: #FFFFFF;
     color: #2E2A3B;
     font-family: 'Inter', sans-serif;
-    width: 30%;
+    width: 35%;
     margin-left: 20px;
 }
 .recent-title{
-    font-size: 16px;
+    font-size: 13px;
     color: #2E2A3B;
     text-align: center;
 
 }
 .recent-text{
-    font-size: 13px;
+    font-size: 11px;
     color: #2E2A3B;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
+
+    
 
 }
 .button {
@@ -122,9 +199,6 @@ html, body {
     font-family: 'Poppins', sans-serif;
 
 }
-
-
-
 
 /*  ABOUT PAGE CSS*/
 

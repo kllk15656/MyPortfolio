@@ -34,12 +34,13 @@ export default function Home() {
         </div>
         </div>
         {/* Right side / profile image*/ }
-        <div className="w-64 h-64 rounded-full overflow-hidden placeholder-profile mx-auto md:mx-0 ">
+       <div className="profile-glow mx-auto md:mx-0">
+  <div className="w-70 h-64 rounded-full overflow-hidden">
+    <img src="/public/icons/kk.png" className="w-full h-full object-cover" />
+  </div>
+</div>
 
-          <img src="/image.jpg"  className="w-full h-full object-cover"/>
 
-         
-        </div>
     </div>
 
         {/* Recent Updates*/ }
@@ -48,7 +49,7 @@ export default function Home() {
 <div className="updates-wrapper name-update mt-16 h-60 rounded-lg">
 
   {/* Section Title */}
-  <h2 className="recent-title font-semibold">
+  <h2 className="recent font-semibold">
     Recent Updates
   </h2>
 
