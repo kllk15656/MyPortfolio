@@ -1,9 +1,9 @@
 export default function AdminLayout({ children }) {
   return (
-    <div className="min-h-screen flex bg-gray-100">
+    <div className="min-h-screen  bg flex bg-gray-100">
 
       {/* Admin Sidebar */}
-      <aside className="w-64 bg-white shadow-lg p-6">
+      <aside className="w-64 admin-bg shadow-lg p-6">
         <h2 className="text-xl font-bold mb-6">Admin Panel</h2>
         <ul className="space-y-4">
           <li>Dashboard</li>

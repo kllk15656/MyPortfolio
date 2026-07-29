@@ -485,11 +485,19 @@ font-family: 'Inter', sans-serif;
 
 /* Admin CSS */
 
+.admin-bg{
+    color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
+    background-color: #2E2A3B;
+
+}
+
 /* Login */
 
 .login-wrap{
     background-color: #E9E5F5;
     box-shadow: 0px 2px 10px rgba(52, 53, 68, 0.3);
+    
 }
 .welcome{
     color: #2E2A3B;
@@ -520,3 +528,158 @@ font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 14px;
 }
+
+/* Dashboard */
+.dash-bg{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3);   
+  border-radius: 12px;
+    padding: 20px;
+}
+.top-dash{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3);
+    border-radius: 25px;
+}
+.dash-title{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #2E2A3B; 
+    font-weight: 400;
+}
+.select-bg{
+    background-color: #FFFFFF;
+    padding: 2px;
+    border-radius: 25px; 
+    box-shadow: 0px 2px 10px rgba(139, 139, 139, 0.3);
+
+}
+.date-select{
+    color: #2E2A3B; 
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+.live-select{
+    font-size: 13px;
+    color: #2E2A3B;
+    font-weight: 600; 
+}
+.vistor{
+    text-align: center;
+    color: #2E2A3B; 
+    font-weight: 550;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 5px 10px rgba(52, 53, 68, 0.3);
+
+}
+
+.vistor-p{
+    text-align: center;
+    color: #2E2A3B; 
+    font-weight: 400;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.sub-online{
+    text-align: center;
+    color: #3E8E25; 
+    font-weight: 550;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 5px 10px rgba(52, 53, 68, 0.3);
+
+}
+.online-p{
+    text-align: center;
+    color: #3E8E25; 
+    font-weight: 400;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+}
+.sub-project{
+    text-align: center;
+     font-weight: 550;
+     color: #0FA3B4;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 5px 10px rgba(52, 53, 68, 0.3);
+
+}
+.project-p{
+    text-align: center;
+    color: #0FA3B4;
+    font-weight: 400;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+
+}
+.sub-tech{
+     text-align: center;
+    color: #9431A3; 
+    font-weight: 550;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 5px 10px rgba(52, 53, 68, 0.3);
+}
+.tech-p{
+    text-align: center;
+    color: #9431A3; 
+    font-weight: 400;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+}
+
+.middle-dash{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3);   
+  border-radius: 12px;
+    padding: 20px;
+}
+
+.traffic-title{
+    text-align: center;
+      color: #2E2A3B;
+      font-size: 16px;
+}
+.traffic-button{
+    background-color: #DCC7FF;
+    border-radius: 12px;
+    color: #2E2A3B;
+}
+.traffic-button.active {
+  background-color: #2E2A3B;   
+  color: #fff;                 
+  border-radius: 12px;
+}
+
+.bottom-dash{
+     background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3); 
+    border-radius: 12px;
+}
+.view-dash{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3); 
+    border-radius: 12px;
+
+}
+.break-dash{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3); 
+    border-radius: 12px;
+}
+.map-dash{
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3); 
+    border-radius: 12px;
+
+}
+.dash-ref {
+    background-color: #E9E5F5;
+    box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.3); 
+    border-radius: 12px;
+}
+
