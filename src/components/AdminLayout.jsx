@@ -1,13 +1,40 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function AdminLayout({ children }) {
-   return (
+  const [open, setOpen] = useState(false);
 
-    <div className="min-h-screen bg flex ">
+  return (
+    <div className="min-h-screen bg flex">
+
+      {/* Burger Button (mobile only) */}
+      {!open && (
+        <button
+          className="md:hidden p-4 absolute top-4 left-0 z-50"
+          onClick={() => setOpen(true)}
+        >
+          <img src="/icons/burger.png" className="w-6 h-6" />
+        </button>
+      )}
 
       {/* Admin Sidebar */}
-      <aside className="w-64 admin-bg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-6">Admin Panel</h2>
+      <aside
+        className={`admin-bg shadow-lg p-6 w-64 fixed top-0 left-0 h-full 
+        transform transition-transform duration-300
+        ${open ? "translate-x-0" : "-translate-x-full"}
+        md:translate-x-0 md:static md:h-screen `}
+      >
+
+        {/* X Close Button (mobile only) */}
+        {open && (
+          <button
+            className="md:hidden absolute top-4 right-4 z-50 text-white"
+            onClick={() => setOpen(false)}
+          >X
+          </button>
+        )}
+
+        <h2 className="text-xl font-bold mb-6 mt-10 md:mt-0">Admin Panel</h2>
 
         <ul className="space-y-4">
 
@@ -64,7 +91,9 @@ export default function AdminLayout({ children }) {
                     src={isActive ? "/icons/SettingsA.png" : "/icons/Settings.png"}
                     className="w-5 h-5"
                     alt="settings"
-                  />Settings</>
+                  />
+                  Settings
+                </>
               )}
             </NavLink>
           </li>
@@ -91,8 +120,9 @@ export default function AdminLayout({ children }) {
 
         </ul>
       </aside>
+
       {/* Main Content */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-10 md:ml-20 ">
         {children}
       </main>
     </div>
