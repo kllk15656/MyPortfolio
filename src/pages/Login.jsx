@@ -1,8 +1,37 @@
 import { useNavigate } from "react-router-dom";
 
+//Firestore functions used to check if the user exists in the database.
+import {collection, query, where, getDocs} from "firebase/firestore";
+import{db} from "../firebase"; //filebase config file
+import { useState } from "react";
 
 export default function Login (){
     const navigate = useNavigate();
+
+    //Stores what the user types
+    const[email, setEmail] = useState("");
+    const[password, setPassword] = useState("");
+
+    // checks database in the backend for login details
+    async function handleLogin() {
+        //check firestore for a matching email and password
+        const q = query(
+            collection(db, "users"),
+            where ("email", "==", email),
+            where ("password", "==", password)
+        ); 
+        
+        // runs the query and gets the result
+        const snapshot = await getDocs(q);
+
+        // if firestore found a mathing user > login success
+        if (snapshot.docs.length > 0 ){
+            navigate("/Dashboard");
+        } else {
+            // if no match > login fails
+            alert("Incorrect email or password");
+        }
+    }
 
     return(
         <div className="min-h-screen flex items-center justify-center ">

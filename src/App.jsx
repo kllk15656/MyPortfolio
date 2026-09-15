@@ -12,8 +12,10 @@ import Portfolio from "./pages/Portfolio";
 import ProjectInfo from "./pages/ProjectInfo";
 
 import Login from "./pages/Login";
+import Logout from "./pages/Logout";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -30,10 +32,12 @@ function App() {
 
         {/* ADMIN LOGIN (NO NAVBAR) */}
         <Route path="/Login" element={<BlankLayout><Login /></BlankLayout>} />
+        <Route path="/Logout" element={<BlankLayout><Logout /></BlankLayout>} />
 
         {/* ADMIN DASHBOARD (SIDEBAR) */}
         <Route path="/Dashboard" element={<AdminLayout><Dashboard /></AdminLayout>} />
         <Route path="/Projects" element={<AdminLayout><Projects /></AdminLayout>} />
+        <Route path="/Settings" element={<AdminLayout><Settings /></AdminLayout>} /> {/* ✔ fixed */}
 
       </Routes>
     </Router>
